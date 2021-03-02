@@ -1,0 +1,14 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    max1=-101
+    max2=-101
+    #ma = sorted(arr)
+    for x in arr :
+        if max1<x :
+            max2=max1
+            max1 =x
+        elif max1>x and max2<x:
+            max2 =x 
+            
+    print(max2)
